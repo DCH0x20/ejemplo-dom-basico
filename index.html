@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion del DOM basico</title>
+</head>
+<body>
+    <h1>Manipulacion del DOM basico</h1>
+
+    <!--los formularios , utilizan el ultimo boton y lo interpreta como submit para enviar el formulario al backend-->
+    <form id="form">
+        <input id = "calculo1" placeholder="Escribe algo aqui">
+        <!-- onchange es una de las formas para escuchar eventos en html , escucha cuando hay una modificacion-->
+        <input onchange= "console.log('cambio el input')" id = "calculo2" placeholder="Escribe algo aqui">
+        <!-- onclick es una de las formas para escuchar eventos en html , escucha cuando le damos click al btn-->
+        <!--onclick="console.log('click al btn')" no es una buena practica-->
+        <button type="button" id="btnCalcular" >Calcular</button>
+        <p id = "result"></p>
+    </form>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
